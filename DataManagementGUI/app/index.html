@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ardwin
+ * Date: 10-4-2018
+ * Time: 12:11
+ */
+
+$model = new Model();
+$controller = new Controller($model);
+$view = new View($controller, $model);
+
+?>
+
+<h1><?php $view->output(); ?></h1>
+
+
+</body>
+</html>
+
